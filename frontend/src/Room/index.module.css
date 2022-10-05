@@ -1,0 +1,119 @@
+.Container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Room{
+    height: 700px;
+    width: 900px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    height: 90px;
+    padding: 0px 10px;
+    background-color: skyblue;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.header p{
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.MessageBox{
+    flex: 1;
+    overflow-y: scroll;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.SendBox{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.InputBox{
+    width: 97%;
+    height: 85%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.InputBox input{
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size: larger;
+    font-family: "Poppins";
+    padding: 0px 10px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.InputBox button{
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    font-size: 20px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: white;
+}
+
+.InputBox img{
+    height: 100%;
+    width: 100%;
+}
+
+.Message{
+    max-width: 75%; 
+    min-width: 100px;
+    width: max-content;
+    padding: 5px 10px;
+    margin: 15px;
+    overflow-wrap: break-word;
+    color: white;
+    font-family: "Poppins";
+    position: relative;
+}
+
+.Left{
+    float: left;
+    border-radius: 0px 10px 10px 10px;
+    background-color: purple;
+}
+
+.Right{
+    float: right;
+    margin-left: auto;
+    border-radius: 10px 0px 10px 10px;
+    background-color: blueviolet;
+}
+
+.MessageInfo{
+    position: absolute;
+    bottom: -35px;
+    color: black;
+    display: flex;
+}
+
+.MessageInfo p{
+    font-size: 12px;
+    margin-right: 10px;
+}
